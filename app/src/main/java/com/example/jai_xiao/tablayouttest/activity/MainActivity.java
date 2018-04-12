@@ -42,9 +42,10 @@ public class MainActivity extends AppCompatActivity {
         tabIndicators = new ArrayList<>();
         tabFragments = new ArrayList<>();
 
-        for(int i=0; i < 3; i++){
-            tabIndicators.add("Fragment"+i);
-        }
+        tabIndicators.add("主页 Fragment");
+        tabIndicators.add("订单 Fragment");
+        tabIndicators.add("我的 Fragment");
+
         for(String s: tabIndicators){
             tabFragments.add(TabContentFragment.newInstance(s));
         }
@@ -69,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
     class ContentPagerAdapter extends FragmentPagerAdapter{
 
         public ContentPagerAdapter(android.support.v4.app.FragmentManager fm){
+
             super(fm);
         }
 
