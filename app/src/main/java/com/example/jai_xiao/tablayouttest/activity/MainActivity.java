@@ -83,11 +83,6 @@ public class MainActivity extends AppCompatActivity {
             return tabIndicators.size();
         }
 
-        @Override
-        public CharSequence getPageTitle(int position) {
-
-            return tabIndicators.get(position);
-        }
 
     }
 
